@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS-->
+    <link href="../css/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- My CSS-->
+    <!-- <link href="css/writeletter.css" rel="stylesheet" type="text/css"> -->
+    <title>Let me shout at you</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation-->
+      <div class="row">
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation"><a href="index.html">Mad Lib</a></li>
+          <li role="presentation"><a href="writeletter.html">Write Me a Letter</a></li>
+          <li role="presentation" class="active"><a href="echo.html">Echo</a></li>
+          <li role="presentation"><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <!-- Shouting-->
+      <div class="row">
+        <h1>If you say something, I will shout it back at you.</h1>
+      </div>
+      <br>
+      <div id="blank">
+        <form class"form-inline" role="form">
+          <div class="row">
+            <div class="form-group">
+              <label class="sr-only" for="usrinput">Shout something</label>
+              <input id="usrinput" class="form-control" type="text" placeholder="Shout something">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <button type="submit" class="btn">SHOUT!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br>
+    <!-- The Letter -->
+    <div class="container"> 
+      <div class="row" id="shout">
+        <span class="output"></span>
+      </div>
+    </div>
+    <br>
+    <!-- JS and Jquery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../css/dist/js/bootstrap.min.js"></script>
+    <script src="js/echo.js"></script>
+  </body>
+</html>

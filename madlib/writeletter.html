@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS-->
+    <link href="../css/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- My CSS-->
+    <link href="css/writeletter.css" rel="stylesheet" type="text/css">
+    <title>Write Me a Letter</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navigation-->
+      <div class="row">
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation"><a href="index.html">Mad Lib</a></li>
+          <li role="presentation" class="active"><a href="writeletter.html">Write Me a Letter</a></li>
+          <li role="presentation"><a href="echo.html">Echo</a></li>
+          <li role="presentation"><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <!-- Address field-->
+      <div class="row">
+      <h1>Give me your address and I will write you a letter</h1>
+      </div>
+      <div class="col-md-10" id="blanks">
+        <form class"form-inline" role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="name">Your name</label>
+                <input id="name" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="address1">Address</label>
+                <input id="address1" class="form-control" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="row">  
+            <div class="form-group">
+              <div class="col-md-2">
+                <label class="sr-only" for="city">City</label>
+                <input id="city" class="form-control" type="text" placeholder="City">
+              </div>
+              <div class="col-md-2">
+                <label class="sr-only" for="state">State</label>
+                <input id="state" class="form-control" type="text" placeholder="State">
+              </div>
+              <div class="col-md-2">
+                <label class="sr-only" for="zipCode">Zip Code</label>
+                <input id="zipCode" class="form-control" type="text" placeholder="Zip Code">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="date">Date</label>
+                <input id="date" class="form-control" type="text" placeholder="mm/dd/yy">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <button type="submit" class="btn">Write me a letter!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-1" id="reset">
+        <form role="form">
+          <button type="submit" class="btn btn-danger">Reset Form</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <!-- The Letter -->
+    <div class="container"> 
+      <div class="row" id="letter">
+<!--        <address>
+          <strong>Ian C MacDonald</strong><br>
+          123 Yeah Right Ln.<br>
+          Portland, OR 97000<br>
+        </address> -->
+        <address>
+          <strong><span class="name"></strong><br>
+          <span class="address1"></span><br>
+          <span class="city"></span>, <span class="state"></span> <span class="zipCode"></span><br>
+        </address>  
+          <p><span class="date"></span></p>
+
+        <p>Dear <span class="name"></span>,</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum condimentum odio. Ut at aliquam neque, non fringilla tortor. Sed commodo pulvinar porttitor. Praesent nibh massa, viverra eget interdum ornare, convallis sed enim. Etiam pellentesque iaculis elit, id iaculis nisi efficitur mattis. Sed bibendum ligula sed arcu pretium, vel malesuada dui tincidunt. Proin commodo cursus tempor. Sed sit amet rhoncus eros, vitae varius lorem. Vivamus ullamcorper nulla viverra ex posuere, a convallis nulla gravida. Vestibulum et malesuada ligula. Donec id risus tristique, pretium nunc id, sagittis neque. Sed nec tempor neque. Maecenas a nisl eu erat facilisis vehicula.</p>
+
+        <p>Pellentesque nec est ac nisi dapibus gravida eu gravida nisl. Morbi ligula enim, maximus ac condimentum vel, ultricies at ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et pretium velit. Cras nec tortor lacinia, feugiat sapien ac, dictum est. Integer arcu purus, fringilla ut malesuada sed, molestie sed tortor. Aenean scelerisque neque id quam tristique tempus. Maecenas et imperdiet erat. Fusce eu vestibulum ipsum. Morbi pellentesque tristique rhoncus. Sed in tortor eget ante accumsan ullamcorper in dapibus diam.</p>
+
+        <p>Sincerely,</p>
+        <p>Ian C MacDonald</p>
+      </div>
+    </div>
+    <br>
+    <!-- JS and Jquery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../css/dist/js/bootstrap.min.js"></script>
+    <script src="js/writeletter.js"></script>
+  </body>
+</html>

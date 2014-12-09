@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    <title>Home</title>
+
+  </head>
+
+  <body>
+      <div class="page-header">
+        <div class="container">
+          <div class="col-md-10">  
+            <h1>Ian C MacDonald <small>Homepage</small></h1>
+          </div>
+          <div id="invert"> 
+            <div id="wandb" class="col-md-2">
+              <form>
+                <button type="submit" class="btn btn-link">Invert Colors</button>
+              </form>
+            </div>
+            <div id="bandw" class="col-md-2 initially-hidden">
+              <form>
+                <button type="submit" class="btn btn-link">Invert Colors Back</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="container">
+        <div class="row">
+
+          <!-- Navigation -->
+          <div class="col-md-3">
+            <ul class="nav bs-docs-sidenav"> 
+              <li><a href="index.html">Home</a></li>
+              <li><a href="talktome">Talk to a website assignment</a></li>
+              <li><a href="madlib">Form assignments</a></li>
+              <li><a href="layouttest">Layout Test</a></li>
+              <li><a href="pingpong">Ping-pong Test</a></li>
+
+            </ul>
+          </div>
+        
+          <!-- Content -->        
+          <div class="col-md-6">
+            <div class="initially-hidden">
+              <img id="logo" class="clickable"  src="img/whale_hello.gif" alt="Hello!"> 
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div id="initially-showing" class="clickable">
+              <p>Hello</p>
+            </div>
+
+            <div class="initially-hidden clickable">
+              <p>Whale that was pretty cool</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Footer -->
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <address>iancmacdonald.com</address>
+      </div>
+    </nav>
+
+  <!-- Java Script -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="css/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

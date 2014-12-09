@@ -1,0 +1,75 @@
+html {
+  font-family: sans-serif;
+}
+
+div {
+  display: block;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4285;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  max-width: 1366;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 100;
+}
+
+.container {
+  padding: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  padding-right: -15px;
+  padding-left: -15px;
+}
+
+.column {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.columnRight {
+  width: 20%;
+}
+
+.columnLeft {
+  width: 70%;
+}
+
+.lead {
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.nav {
+  height: auto;
+  padding-bottom: 0;
+}
+
+.navUnit {
+  display: inline;
+  height: auto;
+  padding: 9px;
+}

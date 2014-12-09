@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap CSS-->
+    <link href="../css/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- My CSS-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>A fantastical adventure</title>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <div class="container">
+      <div class="col-md-10">
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation" class="active"><a href="index.html">Mad Lib</a></li>
+          <li role="presentation"><a href="writeletter.html">Write Me a Letter</a></li>
+          <li role="presentation"><a href="echo.html">Echo</a></li>
+          <li role="presentation"><a href="../index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2" id="reset">
+        <form role="form">
+          <button type="submit" class="btn btn-danger btn-lg">Reset Form</button>
+        </form>
+      </div>
+      <!-- Provide user input-->
+      <div class="row">
+        <div class="col-md-10">
+          <h1>Fill in the blanks to write your story!</h1>
+        </div>
+        <div id="blanks">
+          <form>
+            <div class="form-group col-md-6">
+              <label class="control-label" for="person1">A name</label>
+              <input id="person1" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-6">
+              <label class="control-label" for="person2">Another name</label>
+              <input id="person2" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-12">
+              <label class="control-label" for="question">A question</label>
+              <input id="question" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-12">
+              <label class="control-label" for="exclamation">An exclamation</label>
+              <input id="exclamation" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-6">
+              <label class="control-label" for="verb">A past tense verb</label>
+              <input id="verb" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-6">
+              <label class="control-label" for="noun">A noun</label>
+              <input id="noun" class="form-control" type="text">
+            </div>
+            <div class="col-md-2">
+              <button type="submit" class="btn">Show me the story!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- The Story -->
+    <div>
+      <div class="col-md-12" id="story">
+        <h1>A fantastical adventure</h1>
+        <p>Once upon a time, in a computer system far far away, <span class="person1 highlight"></span> and <span class="person2 highlight"></span> were writing a computer program to answer the "The Question." The question being "<span class="question highlight"></span>" When suddenly, <span class="person1 highlight"></span> exclaimed, "<span class="exclamation highlight"></span>" <span class="person1 highlight"></span> and <span class="person2 highlight"></span> were able to finally finish their decade-long project and celebrated by giving eachother a <span class="noun highlight"></span>.</p>
+      </div>
+    </div>
+    <br>
+    <!-- JS and Jquery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../css/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
