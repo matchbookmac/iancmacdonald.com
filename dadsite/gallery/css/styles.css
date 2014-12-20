@@ -1,0 +1,11 @@
+body {
+  position: relative;
+}
+
+.thumbnail > img {
+  height: 200px;
+}
+
+.modal-body > img {
+  max-width: 100%;
+}
