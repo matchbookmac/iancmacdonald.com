@@ -1,4 +1,4 @@
-#iancmacdonald.com
+#[iancmacdonald.com](https://iancmacdonald.com)
 
 This is my personal website. At the moment it is mostly used for experimenting with git remotes, jQuery, and other website-y stuff.
 
