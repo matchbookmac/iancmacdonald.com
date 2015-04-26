@@ -1,4 +1,4 @@
-#<a href="http://iancmacdonald.com" target="">iancmacdonald.com</link>
+#<a href="http://iancmacdonald.com" target="#">iancmacdonald.com</a>
 
 This is my personal website. At the moment it is mostly used for experimenting with git remotes, jQuery, and other website-y stuff.
 
