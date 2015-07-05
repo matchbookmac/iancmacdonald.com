@@ -1,0 +1,9 @@
+<% if object.errors.any? %>
+  <p class="lead">Uhoh, something went wrong! Please fix these errors:</p>
+    <% object.errors.full_messages.each do |message| %>
+      <div class="alert alert-danger alert-dismissible alert-sm" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= message %>
+      </div>
+    <% end %>
+<% end %>

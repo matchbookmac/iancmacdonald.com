@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '>= 3.2'
 gem 'bootstrap_form'
+gem 'bcrypt', '~> 3.1.5'
 
 group :development do
   gem 'byebug'
